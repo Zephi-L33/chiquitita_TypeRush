@@ -1,0 +1,89 @@
+#multiSection {
+    display: none;
+}
+
+.container {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-image: url("bg.gif");
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.single-btn {
+    background-image: url("single.png");
+    background-size: cover;
+    width: 200px;
+    height: 49px;
+}
+
+.multi-btn {
+    background-image: url("multi.png");
+    background-size: cover;
+    width: 200px;
+    height: 49px;
+   
+}
+
+.proceedHomepage {
+    background-image: url("proceedhomepage.png");
+     background-size: cover;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.saveButton {
+    background-image: url("username.png");
+     background-size: cover;
+    width: 200px;
+    height: 50px;
+}
+
+
+.container {
+    justify-content: center;
+    align-items:center;
+     flex-direction: column;
+
+     background-color: rgba(0, 0, 0, 0.5);
+   
+    border-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    padding: 95px 40px;
+    
+
+   
+   
+    
+}
+
+.usernameBox {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.usernameBox, .saveButton, .proceedHomepage {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

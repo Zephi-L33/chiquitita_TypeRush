@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TypeRush</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="png" sizes="64x64" href="Type (1).png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <div class="menuBox">
+        <div class="menu">
+            <div id="welcome">WELCOME!</div>
+            <div class="generateUsernames"></div>
+            <div id="openTutorial">
+                <img src="tutorial.jpg" alt="tutorial"></img>
+            </div>
+
+            <div id="openGameModePage">
+                <img src="mode.jpg" alt="tutorial"></img>
+            </div>
+
+            <div id="openPlayerCount">
+                <a href="formsUsername-PartyCount.html">
+                    <img src="count.jpg" alt="tutorial"></img>
+                </a>
+            </div>
+
+            <div id="openLeaderBoard">
+                <a href="leaderboard.html">
+                    <img src="leaderboard.jpg" alt="tutorial"></img>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="tutorial" id="tutorial">
+        <div class="pixelWindow">
+
+            <div class="pixelHeader">
+                <span>Tutorial!</span>
+                <button id="closeTutorial" class="pixelClose">X</button>
+            </div>
+
+            <div class="pixelBody">
+
+                <!-- KEEP YOUR EXISTING PAGES -->
+                <div class="tutorialPage active">
+                    <p>
+                        To play Typerush, you first need to select a difficulty: <b>Easy, Medium, Menacing, or
+                            Endless.</b> Each level increases speed and difficulty of words!
+                    </p>
+                </div>
+
+                <div class="tutorialPage">
+
+                    <p>Press the "start" button to begin.
+                        A timer and words will appear, you must type them <b>exactly </b> as shown and within the time
+                        limit.
+                    </p>
+                </div>
+
+                <div class="tutorialPage">
+
+                    <p>Each difficulty will have a required point goal.
+                        You are to meet the score before the time runs out to <b> WIN !</b></p>
+                </div>
+
+                <div class="tutorialPage">
+
+                    <p>For Endless: No time limit, Keep trying as long as you can! Measure your finger's skills.</p>
+
+                </div>
+
+                <!-- KEEP YOUR BUTTONS -->
+                <button id="prevPage" class="pixelBtn">Previous</button>
+                <button id="nextPage" class="pixelBtn">Next</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mode" id="mode">
+        <div class="pixelWindow">
+
+            <div class="pixelHeader">
+                <span>Select a Game Mode!</span>
+                <button id="closeGameModePage" class="pixelClose">X</button>
+            </div>
+
+            <div class="pixelBody">
+
+                <div class="gameModePage active">
+                    <div><a href="easy.html">Easy</a></div>
+                    <div><a href="medium.html">Medium</a></div>
+                    <div><a href="difficult.html">Menacing</a></div>
+                    <div><a href="endless.html">Endless</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="selection.js"></script>
+</body>
+
+</html>

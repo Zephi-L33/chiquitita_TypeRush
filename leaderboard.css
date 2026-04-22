@@ -1,0 +1,165 @@
+@font-face {
+    font-family: RetroBit;
+    src: url("Retrobit.otf");
+}
+@font-face {
+    font-family: pixelPurl;
+    src: url("PixelPurl.ttf");
+}
+
+@font-face {
+    font-family: classic;
+    src: url("ARCADECLASSIC.TTF");
+}
+
+body {
+    background-image: url("bgLeaderboard.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.leadTitle{
+    font-family: pixelPurl; 
+    color: rgb(48, 36, 79);
+    margin-bottom: -5px;
+
+}
+
+
+.tagLine{
+    font-family: RetroBit;
+    font-size: 50px;
+    margin-bottom: -10px;
+    color: white;
+    -webkit-text-stroke: 1px rgb(131, 126, 193);
+
+}
+.shet{
+    font-family: pixelPurl;
+}
+.wordsWrap{
+    margin-bottom: 40px;
+    margin-top: -30px;
+}
+
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+
+       
+    /*display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;*/
+}
+.actions img{
+   height: 40px;
+   width: auto;
+  
+
+}
+
+.backTOgame{
+     margin-right: 20px;
+}
+
+
+.container{
+   
+   background: rgb(255, 255, 255, 0.3);
+    padding: 60px 80px;
+    border-radius: 25px;
+
+
+
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+
+ 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/*body {
+    background-image: url("bgrn.gif");
+
+
+    min-height: 80vh;
+
+
+    margin: 0;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+
+}'
+*/
+
+
+.homeScreen {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+
+    animation: FadeinOut 5s forwards;
+    pointer-events: none;
+}
+
+@keyframes FadeinOut {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.leaderboard-container{
+    margin-top: 20px;
+    font-family: classic;
+    color: white;
+    margin-bottom: 20px;
+
+}
+

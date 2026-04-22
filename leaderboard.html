@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeRush | Leaderboard</title>
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="icon" type="image/png" href="Type (1).png">
+</head>
+<body>
+
+    <div class="homeScreen"></div>
+    <div class="container">
+        <div class="leadTitle">Leaderboard</div>
+        <div class="tagLine">TOP FASTEST FINGERISTS</div>
+        
+        <div class="leaderboard-container">
+            <div id="leaderboardNames" class="leaderboard">
+                <p>No scores yet.</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div onclick="toHome()" class="backTogame">
+                <img src="backToGame.png">
+            </div>
+            <div onclick="clearScores()" class="btn-secondary">
+                <img src="clearUser.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="leaderboard.js"></script>
+</body>
+</html>

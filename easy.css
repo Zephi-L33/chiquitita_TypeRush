@@ -1,0 +1,117 @@
+@font-face {
+    font-family: RetroBit;
+    src: url("Retrobit.otf");
+}
+@font-face {
+    font-family: PxPurl;
+    src: url("PixelPurl.ttf");
+}
+
+
+body {
+    margin: 0;
+    background-image: url("games-bg.gif");
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+
+      display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+h1 {
+    font-family: RetroBit;
+    color: rgb(26, 32, 97);
+    font-size: 80px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#stats {
+     font-family: PxPurl;
+    color: rgb(26, 32, 97);
+    font-size: 22px;
+}
+
+.sentencehere {
+     width: 200px;
+    height: 30px;
+    border-radius: 5px;
+  
+}
+
+#text{
+    font-family: Retrobit;
+    color:black;
+    font-size: 25px;
+}
+
+#lore {
+     font-family: Retrobit;
+    color:black;
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+.start {
+    background-image: url("startgame.png");
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+}
+
+.backtohomepage {
+     background-image: url("homepage.png");
+    background-size: cover;
+    width: 150px;
+    height: 40px;
+}
+
+#content {
+   background : rgba(255, 255, 255, 0.2);
+   padding: 20px 25px;
+   border-radius: 12px;
+   backdrop-filter: blur(1.9px);
+   box-shadow: 0 4px 15px rgb(0, 0, 0, 0.35);
+}
+
+.homeScreen {
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: FadeinOut 5s forwards;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+@keyframes FadeinOut {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
